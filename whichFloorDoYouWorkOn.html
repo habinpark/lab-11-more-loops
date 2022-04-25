@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Floor do you work on?</title>
+</head>
+<body>
+    <script>
+        var floor =  parseInt(prompt("Which floor do you work on?"));
+        var maximumStories =  26;
+
+        while(floor >= maximumStories){
+            console.log("You entered:", floor, "but there are only", maximumStories, "in this building. Try again.")
+            var floor =  parseInt(prompt("Which floor do you work on?"));
+        }
+        console.log("Congrats! You work on floor", floor)
+
+        
+    </script>
+</body>
+</html>
